@@ -1,0 +1,12 @@
+<div class="page-display-light" id="contact">
+    {% for contact in site.contacts %}
+        <div class="contact-display">
+            <strong>{{ contact.name }}</strong><br>
+            <a href="mailto:{{ contact.email }}">{{ contact.email }}</a><br>
+
+            {% if contact.bio != "" %}
+                {{ contact.bio }}
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,7 @@
+<center>
+  <ul id="nav" class="nav">
+    {% for link in site.nav_links %}
+      <a href="{{ link.url }}" class="nav-item">{{ link.title }}</a>
+    {% endfor %}
+  </ul>
+</center>

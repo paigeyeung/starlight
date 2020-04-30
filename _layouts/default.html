@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  {% include head.html %}
+  <body>
+    
+    <div class="content-container">
+      <div class="header">
+          <h1 id="site-title">
+            <a href="/" style="border-bottom:0">{{ site.title }}</a>
+          </h1>
+          {% include nav.html %}
+        </div>
+            {{ content }}
+  {% include foot.html %}

@@ -1,0 +1,27 @@
+url: 
+title: "Starlight Theme" # your site title
+permalink: /:title/
+include:
+  - _redirects
+
+nav_links: # for navbar
+  - url : /
+    title: Home
+  - url: /contact/
+    title: Contact
+
+contacts: # for the contacts page
+  - name: Contact 1
+    email: contact1@sample.email
+    bio: This is the bio for Contact 1.  # optional
+  - name: Contact 2
+    email: contact2@sample.email
+    bio: # optional
+  - name: Contact 3
+    email: contact1@sample.email
+    bio: # optional
+  - name: Contact 4
+    email: contact2@sample.email
+    bio: # optional
+
+favicon_path: /assets/image.png

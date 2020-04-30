@@ -1,0 +1,184 @@
+---
+---
+
+$accent-color: rgb(131,195,255);
+$font-stack: "Libre Franklin", system-ui, sans-serif;
+$header-background-path: "/assets/header-bg.jpg";
+$header-background-color: #000; // header background color if no background path
+$background-path: "/assets/bg.png";
+$background-color: #000; // header background color if no background path
+$text-display-bg-color-dark: rgba(33,33,33,0.9);
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@media only screen and (max-width: 600px) {
+	.page-display, #nav {
+		width: 90%;
+	}
+	.row {
+		display: inline;
+	}
+
+	#contact .column {
+		text-align: center;
+	}
+
+	.column {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.contact-display {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.column {
+		width: 100%;
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+	.page-display, #nav {
+		width: 75%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.row {
+		display: flex;
+	}
+	.column {
+		flex: 46%;
+		padding: 2%;
+		margin:auto;
+	}
+	.page-display, #nav {
+		width: 70%;
+	}
+	.contact-display {
+		display:inline-block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		vertical-align: middle;
+		width:47%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+}
+  
+.content-container {
+	display: block;
+    width: 100%;
+	margin: 0;
+}
+
+.header {
+	background: url($header-background-path);
+	background-size: cover;
+	display: block;
+	width: 70%;
+	align-items: center;
+	overflow: scroll;
+	background-color: $header-background-color;
+	color: white;
+	margin: 0% 11% 0% 11%;
+	padding: 1% 4%;
+}
+
+.page-display {
+	display: block;
+	width: 70%;
+	align-items: center;
+	overflow: scroll;
+	background-color: $text-display-bg-color-dark;
+	color: white;
+	margin: 0% 11% 0% 11%;
+	padding: 1% 4%;
+}
+
+footer p, footer a {
+	text-align: center;
+	color: rgb(255,255,255);
+	opacity: 0.8;
+}
+
+.page-display-light {
+	display: block;
+	width: 70%;
+	align-items: center;
+	overflow: scroll;
+	background-color: rgba(255, 255, 255, 1);
+	color: black;
+	margin: 0% 11% 0% 11%;
+	padding: 1% 4%;
+}
+
+.page-display-light a {
+	color: black;
+}
+
+body {
+    font-family: $font-stack;
+    color: #fff;
+	background-color: $background-color;
+	background-image: url($background-path);
+	background-attachment:fixed;
+	line-height: 1.7rem;
+	margin:0;
+  	padding:0;
+}
+
+#site-title {
+	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	line-height: 2.5rem;
+}
+
+h1 {
+	font-size: 1.7rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	border-bottom: 5px solid $accent-color;
+	width: fit-content;
+	margin-top: 1rem;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.25s ease-in;
+	border-bottom: 1px solid $accent-color;
+}
+
+a:hover, #nav a:active {
+	color: $accent-color;
+}
+
+.nav {
+	position: relative;
+	padding: 0;
+	margin-top: 2%;
+	padding-bottom: 2%;
+	width: 100%;
+    list-style: none;
+	text-align: center;
+}
+
+#nav .nav-item {
+	display: inline;
+	text-align: center;
+	margin-left: 0.8rem;
+	margin-right: 0.8rem;
+}
+
+ul li {
+	margin-left: -1rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
